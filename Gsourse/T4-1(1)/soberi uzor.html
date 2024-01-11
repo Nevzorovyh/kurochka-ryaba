@@ -1,0 +1,573 @@
+﻿<html>
+	<head>
+		<title>Песня о Гайавате</title>
+		<style>
+			@font-face {
+				font-family:GlyphiconsHalflings;
+				src: url(isource/fonts/glyphicons-halflings-regular.eot);
+				src: local('oth'), url(isource/fonts/glyphicons-halflings-regular.woff); 
+				src: local('all'), url(isource/fonts/glyphicons-halflings-regular.ttf);
+				src:	local('for ios'), url(isource/fonts/glyphicons-halflings-regular.svg);
+			}
+			</style>
+		<script type="text/javascript" >
+
+			function invisualmap()
+			{
+			mapimg= new Array(63);
+		
+				mapimg[0]=sForm.img01.src;
+				mapimg[1]=sForm.img02.src;
+				mapimg[2]=sForm.img03.src;
+				mapimg[3]=sForm.img04.src;
+				mapimg[4]=sForm.img05.src;
+				mapimg[5]=sForm.img06.src;
+				mapimg[6]=sForm.img07.src;
+				mapimg[7]=sForm.img08.src;
+				mapimg[8]=sForm.img09.src;
+				mapimg[9]=sForm.img10.src;
+				mapimg[10]=sForm.img11.src;
+				mapimg[11]=sForm.img12.src;
+				mapimg[12]=sForm.img13.src;
+				mapimg[13]=sForm.img14.src;
+				mapimg[14]=sForm.img15.src;
+				mapimg[15]=sForm.img16.src;
+				mapimg[16]=sForm.img17.src;
+				mapimg[17]=sForm.img18.src;
+				mapimg[18]=sForm.img19.src;
+				mapimg[19]=sForm.img20.src;
+				mapimg[20]=sForm.img21.src;
+				mapimg[21]=sForm.img22.src;
+				mapimg[22]=sForm.img23.src;
+				mapimg[23]=sForm.img24.src;
+				mapimg[24]=sForm.img25.src;
+				mapimg[25]=sForm.img26.src;
+				mapimg[26]=sForm.img27.src;
+				mapimg[27]=sForm.img28.src;
+				mapimg[28]=sForm.img29.src;
+				mapimg[29]=sForm.img30.src;
+				mapimg[30]=sForm.img31.src;
+				mapimg[31]=sForm.img32.src;
+				mapimg[32]=sForm.img33.src;
+				mapimg[33]=sForm.img34.src;
+				mapimg[34]=sForm.img35.src;
+				mapimg[35]=sForm.img36.src;
+				mapimg[36]=sForm.img37.src;
+				mapimg[37]=sForm.img38.src;
+				mapimg[38]=sForm.img39.src;
+				mapimg[39]=sForm.img40.src;
+				mapimg[40]=sForm.img41.src;
+				mapimg[41]=sForm.img42.src;
+				mapimg[42]=sForm.img43.src;
+				mapimg[43]=sForm.img44.src;
+				mapimg[44]=sForm.img45.src;
+				mapimg[45]=sForm.img46.src;
+				mapimg[46]=sForm.img47.src;
+				mapimg[47]=sForm.img48.src;
+				mapimg[48]=sForm.img49.src;
+				mapimg[49]=sForm.img50.src;
+				mapimg[50]=sForm.img51.src;
+				mapimg[51]=sForm.img52.src;
+				mapimg[52]=sForm.img53.src;
+				mapimg[53]=sForm.img54.src;
+				mapimg[54]=sForm.img55.src;
+				mapimg[55]=sForm.img56.src;
+				mapimg[56]=sForm.img57.src;
+				mapimg[57]=sForm.img58.src;
+				mapimg[58]=sForm.img59.src;
+				mapimg[59]=sForm.img60.src;
+				mapimg[60]=sForm.img61.src;
+				mapimg[61]=sForm.img62.src;
+				mapimg[62]=sForm.img63.src;
+				mapimg[63]=sForm.img64.src;
+				
+				mapimg2 = new Array(7);
+				
+				mapimg2[0]=sForm.gif02.src;
+				mapimg2[1]=sForm.gif05.src;
+				mapimg2[2]=sForm.gif07.src;
+				mapimg2[3]=sForm.gif08.src;
+				mapimg2[4]=sForm.gif09.src;
+				mapimg2[5]=sForm.gif04.src;
+				mapimg2[6]=sForm.gif12.src;
+				
+				var str='',str2='';
+				
+				for(var i=0;i<mapimg2.length;i++){
+					for(var j=0;j<mapimg.length;j++){
+						if(mapimg2[i]==mapimg[j]){
+							str=str+'1';
+							break;
+						}
+					}
+				}
+				
+				for(var j=0;j<mapimg.length;j++){
+					if(mapimg[j]==sForm.gif09.src){
+						str2=str2+'1';
+					}
+				}
+				if(str.length==7){
+					if(str2.length>=3){
+						alert('О, да! Ты гений!');
+						document.btn1.onClick=location.href="../4-1.html";
+					} else alert('Очень жаль, но ты не справился с заданием. Смотри подсказку');
+				}
+				else alert('Очень жаль, но ты не справился с заданием. Смотри подсказку');
+				
+				
+				
+			}
+			
+			function outvisualmap()
+			{
+				mapimg= new Array(64);
+		
+				sForm.img01.src=mapimg[0];
+				sForm.img02.src=mapimg[1];
+				sForm.img03.src=mapimg[2];
+				sForm.img04.src=mapimg[3];
+				sForm.img05.src=mapimg[4];
+				sForm.img06.src=mapimg[5];
+				sForm.img07.src=mapimg[6];
+				sForm.img08.src=mapimg[7];
+				sForm.img09.src=mapimg[8];
+				sForm.img10.src=mapimg[9];
+				sForm.img11.src=mapimg[10];
+				sForm.img12.src=mapimg[11];
+				sForm.img13.src=mapimg[12];
+				sForm.img14.src=mapimg[13];
+				sForm.img15.src=mapimg[14];
+				sForm.img16.src=mapimg[15];
+				sForm.img17.src=mapimg[16];
+				sForm.img18.src=mapimg[17];
+				sForm.img19.src=mapimg[18];
+				sForm.img20.src=mapimg[19];
+				sForm.img21.src=mapimg[20];
+				sForm.img22.src=mapimg[21];
+				sForm.img23.src=mapimg[22];
+				sForm.img24.src=mapimg[23];
+				sForm.img25.src=mapimg[24];
+				sForm.img26.src=mapimg[25];
+				sForm.img27.src=mapimg[26];
+				sForm.img28.src=mapimg[27];
+				sForm.img29.src=mapimg[28];
+				sForm.img30.src=mapimg[29];
+				sForm.img31.src=mapimg[30];
+				sForm.img32.src=mapimg[31];
+				sForm.img33.src=mapimg[32];
+				sForm.img34.src=mapimg[33];
+				sForm.img35.src=mapimg[34];
+				sForm.img36.src=mapimg[35];
+				sForm.img37.src=mapimg[36];
+				sForm.img38.src=mapimg[37];
+				sForm.img39.src=mapimg[38];
+				sForm.img40.src=mapimg[39];
+				sForm.img41.src=mapimg[40];
+				sForm.img42.src=mapimg[41];
+				sForm.img43.src=mapimg[42];
+				sForm.img44.src=mapimg[43];
+				sForm.img45.src=mapimg[44];
+				sForm.img46.src=mapimg[45];
+				sForm.img47.src=mapimg[46];
+				sForm.img48.src=mapimg[47];
+				sForm.img49.src=mapimg[48];
+				sForm.img50.src=mapimg[49];
+				sForm.img51.src=mapimg[50];
+				sForm.img52.src=mapimg[51];
+				sForm.img53.src=mapimg[52];
+				sForm.img54.src=mapimg[53];
+				sForm.img55.src=mapimg[54];
+				sForm.img56.src=mapimg[55];
+				sForm.img57.src=mapimg[56];
+				sForm.img58.src=mapimg[57];
+				sForm.img59.src=mapimg[58];
+				sForm.img60.src=mapimg[59];
+				sForm.img61.src=mapimg[60];
+				sForm.img62.src=mapimg[61];
+				sForm.img63.src=mapimg[62];
+				sForm.img64.src=mapimg[63];
+				
+				
+				
+			}	
+			
+		</script>
+		 
+		
+	</head>
+	
+	<body >
+	<font face="Helvetica">
+		 <form name="sForm">
+			
+			<table border="1" width="20%" bgcolor="#f0f0f0">
+			
+			<H2>
+				Выполни схематический рисунок по отрывку из "Песни о Гайавате" Генри Лонгфелло<br>
+			</H2>
+			<font size="5"> 
+				
+			</font>
+			<input type="button"name="btn1"value="     Задание     " style="font-size:30pt" onClick="alert('Гайавата, вождь племени ирокезов, учил своих соплеменников искусству письма:\n Из мешка он вынул краски,\n Всех цветов он вынул краски\nИ на гладкой на бересте\n Много сделал тайных знаков,\nДивных и фигур и знаков;\nВсе они изображали\nНаши мысли, наши речи...\n\nБелый круг был знаком жизни,\nЧерный круг был знаком смерти...\n\nДля земли нарисовал он\nКраской линию прямую,\nДля небес - дугу над нею,\nДля восхода - точку слева,\nДля заката - точку справа,\nА для полдня - на вершине.\nВсе пространство под дугою\nБелый день обозначало,\nЗвезды в центре - время ночи,\nА волнистые полоски -\nТучи, дождь и непогоду...')">
+			
+			<input type="button"name="btn1"value="           Help          " style="font-size:30pt" onClick="alert('Используй только те символы, которые упоминаются в тексте.')">
+			
+			<input type="button"name="btn2"value="            OK           " style="font-size:30pt" onClick="invisualmap()"><br><br><br><br>
+			<tr>
+					<td><a href="#" onClick="img01.src=img99.src">
+						<img src="isource\00.jpg" name="img01" width=100 height=100 >
+					</td>
+					
+					<td><a href="#" onClick="img02.src=img99.src">
+						<img src="isource\00.jpg" name="img02" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img03.src=img99.src">
+						<img src="isource\00.jpg" name="img03" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img04.src=img99.src">
+						<img src="isource\00.jpg" name="img04" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img05.src=img99.src">
+						<img src="isource\00.jpg" name="img05" width=100 height=100 >
+					</td>
+					
+					<td><a href="#" onClick="img06.src=img99.src">
+						<img src="isource\00.jpg" name="img06" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img07.src=img99.src">
+						<img src="isource\00.jpg" name="img07" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img08.src=img99.src">
+						<img src="isource\00.jpg" name="img08" width=100 height=100>
+					</td>
+					
+				</tr>
+			
+			<tr>
+					<td><a href="#" onClick="img09.src=img99.src">
+						<img src="isource\00.jpg" name="img09" width=100 height=100>
+					</td>
+
+					<td><a href="#" onClick="img10.src=img99.src">
+						<img src="isource\00.jpg" name="img10" width=100 height=100>
+					</td>
+
+					<td><a href="#" onClick="img11.src=img99.src">
+						<img src="isource\00.jpg" name="img11" width=100 height=100>
+					</td>
+
+					<td><a href="#" onClick="img12.src=img99.src">
+						<img src="isource\00.jpg" name="img12" width=100 height=100>
+					</td>
+
+					<td><a href="#" onClick="img13.src=img99.src">
+						<img src="isource\00.jpg" name="img13" width=100 height=100>
+					</td>
+
+					<td><a href="#" onClick="img14.src=img99.src">
+						<img src="isource\00.jpg" name="img14" width=100 height=100>
+					</td>
+
+					<td><a href="#" onClick="img15.src=img99.src">
+						<img src="isource\00.jpg" name="img15" width=100 height=100>
+					</td>
+
+					<td><a href="#" onClick="img16.src=img99.src">
+						<img src="isource\00.jpg" name="img16" width=100 height=100>
+					</td>
+				</tr>
+				
+				<tr>
+					<td><a href="#" onClick="img17.src=img99.src">
+						<img src="isource\00.jpg" name="img17" width=100 height=100>
+					</td>
+				
+					<td><a href="#" onClick="img18.src=img99.src">
+						<img src="isource\00.jpg" name="img18" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img19.src=img99.src">
+						<img src="isource\00.jpg" name="img19" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img20.src=img99.src">
+						<img src="isource\00.jpg" name="img20" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img21.src=img99.src">
+						<img src="isource\00.jpg" name="img21" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img22.src=img99.src">
+						<img src="isource\00.jpg" name="img22" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img23.src=img99.src">
+						<img src="isource\00.jpg" name="img23" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img24.src=img99.src">
+						<img src="isource\00.jpg" name="img24" width=100 height=100>
+					</td>
+				</tr>
+				
+				<tr>
+					<td><a href="#" onClick="img25.src=img99.src">
+						<img src="isource\00.jpg" name="img25" width=100 height=100>
+					</td>
+				
+					<td><a href="#" onClick="img26.src=img99.src">
+						<img src="isource\00.jpg" name="img26" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img27.src=img99.src">
+						<img src="isource\00.jpg" name="img27" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img28.src=img99.src">
+						<img src="isource\00.jpg" name="img28" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img29.src=img99.src">
+						<img src="isource\00.jpg" name="img29" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img30.src=img99.src">
+						<img src="isource\00.jpg" name="img30" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img31.src=img99.src">
+						<img src="isource\00.jpg" name="img31" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img32.src=img99.src">
+						<img src="isource\00.jpg" name="img32" width=100 height=100>
+					</td>
+				</tr>
+				
+				<tr>
+					<td><a href="#" onClick="img33.src=img99.src">
+						<img src="isource\00.jpg" name="img33" width=100 height=100>
+					</td>
+				
+					<td><a href="#" onClick="img34.src=img99.src">
+						<img src="isource\00.jpg" name="img34" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img35.src=img99.src">
+						<img src="isource\00.jpg" name="img35" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img36.src=img99.src">
+						<img src="isource\00.jpg" name="img36" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img37.src=img99.src">
+						<img src="isource\00.jpg" name="img37" width=100 height=100>
+					</td>
+					
+					<td>	<a href="#" onClick="img38.src=img99.src">
+						<img src="isource\00.jpg" name="img38" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img39.src=img99.src">
+						<img src="isource\00.jpg" name="img39" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img40.src=img99.src">
+						<img src="isource\00.jpg" name="img40" width=100 height=100>
+					</td>
+				<tr/>
+				<tr>
+					<td><a href="#" onClick="img41.src=img99.src">
+						<img src="isource\00.jpg" name="img41" width=100 height=100>
+					</td>
+				
+					<td><a href="#" onClick="img42.src=img99.src">
+						<img src="isource\00.jpg" name="img42" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img43.src=img99.src">
+						<img src="isource\00.jpg" name="img43" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img44.src=img99.src">
+						<img src="isource\00.jpg" name="img44" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img45.src=img99.src">
+						<img src="isource\00.jpg" name="img45" width=100 height=100>
+					</td>
+					
+					<td>	<a href="#" onClick="img46.src=img99.src">
+						<img src="isource\00.jpg" name="img46" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img47.src=img99.src">
+						<img src="isource\00.jpg" name="img47" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img48.src=img99.src">
+						<img src="isource\00.jpg" name="img48" width=100 height=100>
+					</td>
+				<tr/>
+				<tr>
+					<td><a href="#" onClick="img49.src=img99.src">
+						<img src="isource\00.jpg" name="img49" width=100 height=100>
+					</td>
+				
+					<td><a href="#" onClick="img50.src=img99.src">
+						<img src="isource\00.jpg" name="img50" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img51.src=img99.src">
+						<img src="isource\00.jpg" name="img51" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img52.src=img99.src">
+						<img src="isource\00.jpg" name="img52" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img53.src=img99.src">
+						<img src="isource\00.jpg" name="img53" width=100 height=100>
+					</td>
+					
+					<td>	<a href="#" onClick="img54.src=img99.src">
+						<img src="isource\00.jpg" name="img54" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img55.src=img99.src">
+						<img src="isource\00.jpg" name="img55" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img56.src=img99.src">
+						<img src="isource\00.jpg" name="img56" width=100 height=100>
+					</td>
+				<tr/>
+				<tr>
+					<td><a href="#" onClick="img57.src=img99.src">
+						<img src="isource\00.jpg" name="img57" width=100 height=100>
+					</td>
+				
+					<td><a href="#" onClick="img58.src=img99.src">
+						<img src="isource\00.jpg" name="img58" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img59.src=img99.src">
+						<img src="isource\00.jpg" name="img59" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img60.src=img99.src">
+						<img src="isource\00.jpg" name="img60" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img61.src=img99.src">
+						<img src="isource\00.jpg" name="img61" width=100 height=100>
+					</td>
+					
+					<td>	<a href="#" onClick="img62.src=img99.src">
+						<img src="isource\00.jpg" name="img62" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img63.src=img99.src">
+						<img src="isource\00.jpg" name="img63" width=100 height=100>
+					</td>
+					
+					<td><a href="#" onClick="img64.src=img99.src">
+						<img src="isource\00.jpg" name="img64" width=100 height=100>
+					</td>
+				<tr/>
+				<tr>
+					<td colspan="4" align="center">
+						<H3>Для заполнения картинки, нужно нажать на ячейку, которую  нужно запонить</H3>
+						
+					</td>
+					<td colspan="4"  align="center">
+							<H3>Для выбора картинки нуно кликнуть по списку</H3>
+							
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2" rowspan="2" align="center">
+						<a href="#">
+						 <img src="isource\00.jpg" name="img99" width=100 height=100><br> 
+					</td>
+					
+					<td>
+						<a href="#" onClick="img99.src=gif01.src" >
+						<img src="isource\00.jpg" name="gif01" width=100 height=100>
+					</td>
+					<td>
+						<a href="#" onClick="img99.src=gif02.src" >
+						<img src="isource\02.jpg" name="gif02" width=100 height=100>
+					</td>
+					<td>
+						<a href="#" onClick="img99.src=gif03.src" >
+						<img src="isource\03.jpg" name="gif03" width=100 height=100>
+					</td>
+				
+				<td>
+						<a href="#" onClick="img99.src=gif04.src" >
+						<img src="isource\04.jpg" name="gif04" width=100 height=100>
+					</td>
+					<td>
+						<a href="#" onClick="img99.src=gif05.src" >
+						<img src="isource\05.jpg" name="gif05" width=100 height=100>
+					</td>
+					
+					<td>
+						<a href="#" onClick="img99.src=gif06.src" >
+						<img src="isource\06.jpg" name="gif06" width=100 height=100>
+					</td>
+					
+					
+					<td>
+						<a href="#" onClick="img99.src=gif07.src" >
+						<img src="isource\07.jpg" name="gif07" width=100 height=100>
+					</td>
+					</tr>
+					<tr>
+					<td>
+						<a href="#" onClick="img99.src=gif08.src" >
+						<img src="isource\08.jpg" name="gif08" width=100 height=100>
+					</td>
+					
+					<td>
+						<a href="#" onClick="img99.src=gif09.src" >
+						<img src="isource\09.jpg" name="gif09" width=100 height=100>
+					</td>
+					<td>
+					<a href="#" onClick="img99.src=gif10.src" >
+						<img src="isource\10.jpg" name="gif10" width=100 height=100>
+					</td>
+					<td>
+						<a href="#" onClick="img99.src=gif11.src" >
+						<img src="isource\11.jpg" name="gif11" width=100 height=100>
+					</td>
+					<td>
+						<a href="#" onClick="img99.src=gif12.src" >
+						<img src="isource\12.jpg" name="gif12" width=100 height=100>
+					</td>
+					<td>
+						<a href="#" onClick="img99.src=gif13.src" >
+						<img src="isource\01.jpg" name="gif13" width=100 height=100>
+					</td>
+					<td>
+						<a href="#" onClick="img99.src=gif14.src" >
+						<img src="isource\14.jpg" name="gif14" width=100 height=100 >
+					</td>
+				</tr>
+					</tr>
+				</tr>
+			</table>	
+		  </form> 
+		</font>
+	</body>
+</html>

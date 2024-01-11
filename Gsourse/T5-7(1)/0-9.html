@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+	<script  type="text/javascript">
+		function bcl1(){
+		var k=0,i=0;l=0;
+			if(document.getElementById("c3").checked){
+				k=k+1;
+			}
+			if(document.getElementById("c4").checked){
+				k=k+1;
+			}
+			if(document.getElementById("c6").checked){
+				k=k+1;
+			}
+			
+			
+			if(document.getElementById("c1").checked){
+				i=i+1;
+			}
+			if(document.getElementById("c2").checked){
+				i=i+1;
+			}
+			if(document.getElementById("c5").checked){
+				i=i+1;
+			}
+			
+			if(k==0){
+					if(i>0){
+						alert('Умница! Продолжай в том духе!');
+						window.location.href = '../5-7.html';
+						document.getElementById("ta1").value="0";
+					}else{
+						alert('Увы! Но нет...');
+						document.getElementById("ta1").value=String(Number(document.getElementById("ta1").value)+1);
+					}
+			}else{alert('Увы! Но нет...');
+				  document.getElementById("ta1").value=String(Number(document.getElementById("ta1").value)+1);
+			}
+			
+			if(document.getElementById("ta1").value=="3"){
+				if (window.confirm("Сдаешься?")) {
+				  alert("правильные ответы:1,2,5");
+				}
+			}
+		}
+	</script>
+  </head>
+  <body>
+	<p></p><br>
+	<p>Прослушай музыкальный трек. Выбери из предложенных картин ту, которая, на твой взгляд, соответствует данному музыкальному произведению. </p><br>
+	
+	<form>
+		<input type="button" value="Взять подсказку"  style="padding:6px 20px;"onclick="alert('Прозвучало произведение М. Мусоргского: Цикл ,,Картинки с выставки. Два еврея. Богатый и бедный,,');">
+		<input type="button" value="Готово" 		  style="padding:6px 20px;"onclick="bcl1()"></p>
+		<textarea id="ta1"hidden>0</textarea>
+		<audio controls src="0-9/ms.mp3"></audio>
+		<p><input type="checkbox"id="c1"style="width: 100px;height:100px"><img src="0-9/01.jpg"style="height:100px;"><br>Коровин С.А. Этюд головы</p>
+		<p><input type="checkbox"id="c2"style="width: 100px;height:100px"><img src="0-9/02.jpg"style="height:100px;"><br>Максимов В.М. Голова старика</p>
+		<p><input type="checkbox"id="c3"style="width: 100px;height:100px"><img src="0-9/03.jpg"style="height:100px;"><br>Кужеленко О.Д. Белые георгины</p>
+		<p><input type="checkbox"id="c4"style="width: 100px;height:100px"><img src="0-9/04.jpg"style="height:100px;"><br>Крамской И.Н. Букет цветов</p>
+		<p><input type="checkbox"id="c5"style="width: 100px;height:100px"><img src="0-9/05.jpg"style="height:100px;"><br> Перов В.Д. Сцена на паперти</p>
+		<p><input type="checkbox"id="c6"style="width: 100px;height:100px"><img src="0-9/06.jpg"style="height:100px;"><br> Шильдер Н.Г. Заросли кустарника.  Лето</p>
+		
+				
+		</form>
+  </body>
+</html>

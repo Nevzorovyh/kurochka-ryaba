@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 25px;
+  text-align: center;
+}
+</style>
+<head>
+
+<title>Task</title>
+
+<script language="JavaScript">
+<!-- hide
+
+function first() {
+// проверка на прваильность ответа	
+var i=0,n=document.getElementById("myText1").value;
+
+	if (document.getElementById("myText").value=="Курдов Крах Белых") {i=1;}
+ 
+	if (document.getElementById("myText").value=="курдов крах белых") {i=1;}
+	   
+	if (document.getElementById("myText").value=="Курдов крах белых") {i=1;}
+	
+	if (document.getElementById("myText").value=="Курдов Крах белых") {i=1;}
+	
+	if (document.getElementById("myText").value=="Курдов крах Белых") {i=1;}
+	
+	if (document.getElementById("myText").value=="курдов Крах белых") {i=1;}
+	
+	if (document.getElementById("myText").value=="Курдов крах Белых") {i=1;}
+	
+	if (document.getElementById("myText").value=="курдов Крах Белых") {i=1;}
+	
+	
+	if (document.getElementById("myText").value=="Курдов Крах Белых ") {i=1;}
+ 
+	if (document.getElementById("myText").value=="курдов крах белых ") {i=1;}
+	   
+	if (document.getElementById("myText").value=="Курдов крах белых ") {i=1;}
+	
+	if (document.getElementById("myText").value=="Курдов Крах белых ") {i=1;}
+	
+	if (document.getElementById("myText").value=="Курдов крах Белых ") {i=1;}
+	
+	if (document.getElementById("myText").value=="курдов Крах белых ") {i=1;}
+	
+	if (document.getElementById("myText").value=="Курдов крах Белых ") {i=1;}
+	
+	if (document.getElementById("myText").value=="курдов Крах Белых ") {i=1;}
+   
+if (i==1){
+		alert("Да ты гений!!");
+		document.button1.onClick=location.href="T2-1.html";
+		}
+		else{
+			alert("Ну, как так можно? Нет! Посмотри подсказку");
+			document.getElementById("myText1").value=String(Number(n)+1);
+			}
+if(n>=3){
+		if(confirm('Сдаешься?')==true){
+										document.button1.onClick=location.href="T2-1.html";
+										}
+		}
+
+}
+
+function second(){
+// подсказка
+		alert("Введи фамилию автора и название картины через пробел. Без инициалов и кавычек. Если не помогло, нужно нажать ОК 3 раза. После сдаться и идти дальше.");
+}
+
+// -->
+</script>
+</head>
+
+<body>
+<table border=5>
+	<tr border=5><th><font size="5"> Найди работу по фрагменту стихотворения Владимира Маяковского. Укажи автора и название.</th>
+	</tr>
+	<tr>
+			<th><font size="5"><br>
+								Ешь ананасы, <br>
+								рябчиков жуй,<br>
+								день твой последний<br>
+								приходит, буржуй.</th>
+			<th><input type="button" name="button2" value="Help" onClick="second()"style="width: 100px; height: 100px;">
+			</th>
+	</tr>
+	<tr>
+			<th>
+				<input type="text" name="myText" value=""style="width: 750px;"id="myText">
+				<input type="text" name="myText1" value=""style="width: 750px;"id="myText1" value="1"hidden>
+			</th>
+			<th>
+				<input type="button" name="button1" value="Ok" onClick="first()"style="width: 100px; height: 100px;">	
+			</th>
+	</tr>
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Task</title>
+
+<script language="JavaScript">
+<!-- hide
+
+function first() {
+// создание массива для дополнения пользователем
+const ans=[];
+
+	ans[0]=document.myForm1.myText1.value;
+	ans[1]=document.myForm2.myText2.value;
+	ans[2]=document.myForm3.myText3.value;
+	ans[3]=document.myForm4.myText4.value;
+	ans.push(document.myForm5.myText5.value);
+	ans.push(document.myForm6.myText6.value);
+	ans.push(document.myForm7.myText7.value);
+	ans.push(document.myForm8.myText8.value);
+	ans.push(document.myForm9.myText9.value);
+	ans.push(document.myForm10.myText10.value);
+	ans[4]=document.myForm5.myText5.value;
+	ans[5]=document.myForm6.myText6.value;
+	ans[6]=document.myForm7.myText7.value;
+	ans[7]=document.myForm8.myText8.value;
+	ans[8]=document.myForm9.myText9.value;
+	ans[9]=document.myForm10.myText10.value;
+	
+var str='';
+
+for (var k=0; k<ans.length; k++){
+	str=str+' '+ans[k];
+}	
+
+alert(str+'.');
+
+window.location.href ='../2-1.html';
+
+}
+
+function second(){
+// подсказка
+		alert("В одной строке можно напечатать до 255 символов. Нужно заполнить все поля непременно.");
+	
+}
+
+// -->
+</script>
+</head>
+
+<body>
+<table border=5>
+	<tr border=5>
+			<th>Найди в зале №17 картину Н.К. Пимоненко "Прачка". Глядя на картину, ответь на вопросы так, чтобы получился связный рассказ.</th>
+			<th></th>
+	</tr>
+	<tr border=5>
+			<th>Кто?</th>
+			<th>
+				<form name="myForm1"><input type="text" name="myText1" value=""></form>
+			</th>
+	</tr>
+	<tr>
+			<th>Когда?</th>
+			<th>
+				<form name="myForm2"><input type="text" name="myText2" value=""></form>
+			</th>
+	</tr>
+	<tr>
+			<th>Где?</th>
+			<th>
+				<form name="myForm3"3><input type="text" name="myText3" value=""></form>
+			</th>
+	</tr>
+	<tr>
+			<th>Сколько?</th>
+			<th>
+				<form name="myForm4"><input type="text" name="myText4" value=""></form>
+			</th>
+	</tr>
+	<tr>
+			<th>Что сделал?</th>
+			<th>
+				<form name="myForm5"><input type="text" name="myText5" value=""></form>
+			</th>
+	</tr>
+	<tr>
+			<th>Зачем?</th>
+			<th>
+				<form name="myForm6"><input type="text" name="myText6" value=""></form>
+			</th>
+	</tr>
+	<tr>
+			<th>Кто видел?</th>
+			<th>
+				<form name="myForm7"><input type="text" name="myText7" value=""></form>
+			</th>
+	</tr>
+	
+	<tr>
+			<th>Что сказал?</th>
+			<th>
+				<form name="myForm8"><input type="text" name="myText8" value=""></form>
+			</th>
+	</tr>
+	<tr>
+			<th>Что ответил?</th>
+			<th>
+				<form name="myForm9"><input type="text" name="myText9" value=""></form>
+			</th>
+	</tr>
+	<tr>
+			<th>Чем все закончилось?</th>
+			<th>
+				<form name="myForm10"><input type="text" name="myText10" value=""></form>
+			</th>
+	</tr>
+	<tr>
+			<th><input type="button" name="button1" value="Help" onClick="second()">	
+			</th>
+			<th><input type="button" name="button2" value="Ok" onClick="first()"id="b2">	
+			</th>
+	</tr>
+</table>
+
+
+</body>
+</html>

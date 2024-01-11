@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<style>
+ #user {
+    width: 750px; /* Ширина поля в пикселах */
+   } 
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 25px;
+  text-align: center;
+}
+</style>
+<head>
+
+<title>Task</title>
+
+<script language="JavaScript">
+<!-- hide
+
+function first(){
+// проверка на прваильность ответа	
+var i=0;
+	if (document.getElementById("t1").value=="Галимбаева Баурсаки"){i=1;}
+	if (document.getElementById("t1").value=="галимбаева баурсаки"){i=1;}
+	if (document.getElementById("t1").value=="Галимбаева баурсаки"){i=1;}
+	if (document.getElementById("t1").value=="галимбаева Баурсаки"){i=1;}
+	
+	if (document.getElementById("t1").value=="Галимбаева Баурсаки "){i=1;}
+	if (document.getElementById("t1").value=="галимбаева баурсаки "){i=1;}
+	if (document.getElementById("t1").value=="Галимбаева баурсаки "){i=1;}
+	if (document.getElementById("t1").value=="галимбаева Баурсаки "){i=1;}
+	
+	if(i==1){
+		alert("Умница! Продолжай в том же духе!");
+		document.button1.onClick=location.href="../5-4.html";
+	}
+	else {alert("Увы! Но нет... Посмотри подсказку!\n");
+	document.getElementById("user").value=String(Number(document.getElementById("user").value)+1);
+			}
+  if(document.getElementById("user").value>=4){
+													if(confirm('Сдаешься?')==true){
+													alert("Галимбаева Баурсаки");
+										}
+													}
+}
+
+function second(){
+// подсказка
+		alert("Введи фамилию автора и название картины без инициалов и кавычек. Если не помогло, нужно нажать ОК 3 раза. После сдаться и идти дальше.");
+	
+}
+
+// -->
+</script>
+</head>
+
+<body>
+<table border=5>
+	<tr>
+			<th colspan="6"><font size="5">Из предложенных фрагментов выбери 4, относящиеся к одной картине. Найди ее в зале (№10). Укажи автора и название.</th>
+			
+	</tr>
+	<tr>
+			<th>
+				<img src="А1.jpg"width=100 height=100>
+			</th>
+			<th>
+				<img src="б1.jpg"width=100 height=100>
+			</th>
+			<th>
+				<img src="А2.jpg"width=100 height=100>
+			</th>
+			<th>
+				<img src="б2.jpg"width=100 height=100> 
+			</th>
+			<th>
+				<img src="А3.jpg"width=100 height=100>
+			</th>
+			<th rowspan="2">
+				<input type="button" name="button2" value="Help" size="5" style="width: 100px; height: 100px;"  onClick="second()">	
+			</th>
+	</tr>
+	<tr>
+			<th>
+				<img src="А4.jpg"width=100 height=100>
+			</th>
+			<th>
+				<img src="б3.jpg"width=100 height=100>
+			</th>
+			<th>
+				<img src="б4.jpg"width=100 height=100> 
+			</th>
+			<th>
+				<img src="м1.jpg"width=100 height=100>
+			</th>
+			<th>
+				<img src="ш1.jpg"width=100 height=100>
+			</th>
+			
+	</tr>
+	<tr>
+			<th colspan="5">
+				<p align="left"><font size="5"><input type="text" size="95"name="text1"id="t1"></p>
+				<input type="text" name="myText1" id="user" value="1" hidden>
+			</th>
+			<th>
+				<input type="button" name="button1" value="Ok" onClick="first()"style="width: 100px; height: 100px;">
+			</th>
+	</tr>
+</table>
+
+
+</body>
+</html>

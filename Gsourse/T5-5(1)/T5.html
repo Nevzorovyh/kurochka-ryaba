@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html> 
+<head>
+  <title>Пуантилизм</title>
+  <style>
+    canvas {
+      border: #333 10px solid;
+    } 
+    body {
+      padding: 50px;
+    }
+	
+  </style>
+</head> 
+<body>
+	  <table>
+		<tr>
+			<th colspan="2">
+				<input onclick="quest();"type="button"value="Задание"style="width: 183px; height: 50px;">
+			</th>
+			<th colspan="2">
+				<input onclick="hlp()"type="button"value="Помощь"style="width: 183px; height: 50px;">
+			</th>
+			<th colspan="2">
+				<input name="button1"id="ko"onclick="gtp()"type="button"value="Готово"style="width: 183px; height: 50px;"disabled="true">
+			</th>
+			<tr></tr>
+			<th colspan="6">
+				<canvas id="myCanvas" width="550px" height="350px"></canvas> 
+			</th>
+			<tr></tr>
+			<th>
+				<input onclick="change(this)"type="button"value="Красный"style="background:red; width: 90px; height: 50px;">
+			</th>
+			<th>
+				<input onclick="change(this)"type="button"value="Зеленый"style="background:green; width: 90px; height: 50px;">
+			</th>
+			<th>
+				<input onclick="change(this)"type="button"value="Оранжевый"style="background:orange; width: 90px; height: 50px;">
+			</th>
+			<th>
+				<input onclick="change(this)"type="button"value="Синий"style="background:blue; width: 90px; height: 50px;">
+			</th>
+			<th>
+				<input onclick="change(this)"type="button"value="Желтый"style="background:yellow; width: 90px; height: 50px;">
+			</th>
+			<th>
+				<input onclick="change(this)"type="button"value="Аквамарин"style="background:aqua; width: 90px; height: 50px;">
+			</th>
+			<tr></tr>
+			<th>
+				<input onclick="change(this)"type="button"value="Морской"style="background:navy; width: 90px; height: 50px;">
+			</th>
+			<th>
+				<input onclick="change(this)"type="button"value="Бирюзовый"style="background:teal; width: 90px; height: 50px;">
+			</th>
+			<th>
+				<input onclick="change(this)"type="button"value="Лайм"style="background:lime; width: 90px; height: 50px;">
+			</th>
+			<th>
+				<input onclick="change(this)"type="button"value="Оливковый"style="background:olive; width: 90px; height: 50px;">
+			</th>
+			<th>
+				<input onclick="change(this)"type="button"value="Бордовый"style="background:maroon; width: 90px; height: 50px;">
+			</th>
+			<th>
+				<input onclick="change(this)"type="button"value="Пурпурный"style="background:purple; width: 90px; height: 50px;">
+			</th>
+			<tr></tr>
+			<th>
+				<input onclick="change(this)"type="button"value="Фуксия"style="background:fuchsia; width: 90px; height: 50px;">
+			</th>
+			<th>
+				<input onclick="change(this)"type="button"value="Белый"style="background:white; width: 90px; height: 50px;">
+			</th>
+			<th>
+				<input onclick="change(this)"type="button"value="Серебряный"style="background:silver; width: 90px; height: 50px;">
+			</th>
+			<th>
+				<input onclick="change(this)"type="button"value="Серый"style="background:grey; width: 90px; height: 50px;">
+			</th>
+			<th>
+				<input onclick="change(this)"type="button"value="Черный"style="background:black; width: 90px; height: 50px;">
+			</th>
+			<tr></tr>
+			<th>
+				<font size="3"> Размер<br>кисти
+			</th>
+			<th>
+				<input onclick="rad=12;"type="button"value=""style="background:white; width: 24px; height: 24px; border-radius: 12px;">
+			</th>
+			<th>
+				<input onclick="rad=10;"type="button"value=""style="background:white; width: 20px; height: 20px; border-radius: 10px;">
+			</th>
+			<th>
+				<input onclick="rad=8;"type="button"value=""style="background:white; width: 16px; height: 16px; border-radius: 8px;">
+			</th>
+		</tr>
+	  </table>
+  <script>
+    var canvas = document.querySelector("#myCanvas");
+    var context = canvas.getContext("2d");
+	
+	var canvasPos = getPosition(canvas);
+	var mouseX = 275;
+	var mouseY = 175;
+	var fillStyle1 = "#FFFFFF"
+	var rad = 8;
+	var clOk = 1;
+	
+	var example = document.getElementById("myCanvas"),
+        ctx       = example.getContext('2d'), // Контекст
+        pic       = new Image();              // "Создаём" изображение
+      pic.src    = '10.jpg';  // Источник изображения, позаимствовано на хабре
+      pic.onload = function() {    // Событие onLoad, ждём момента пока загрузится изображение
+        ctx.drawImage(pic, 0, 0,550,350);  // Рисуем изображение от точки с координатами 0, 0
+      }
+	
+	function change(button) {
+		fillStyle1=button.style.backgroundColor;
+	}
+
+	canvas.addEventListener("click", setMousePosition, false);
+
+	function setMousePosition(e) {
+	   mouseX = e.clientX - canvasPos.x;
+		mouseY = e.clientY - canvasPos.y;
+		if(clOk!=50){
+			clOk = clOk+1;
+		} else {
+			let btn = document.getElementById('ko');
+			btn.disabled = false;
+		};
+	}
+	
+	function getPosition(el) {
+	  var xPosition = 0;
+	  var yPosition = 0;
+
+	  while (el) {
+		xPosition += (el.offsetLeft - el.scrollLeft + el.clientLeft);
+		yPosition += (el.offsetTop - el.scrollTop + el.clientTop);
+		el = el.offsetParent;
+	  }
+	  return {
+		x: xPosition,
+		y: yPosition
+	  };
+	}
+	
+	function update(){
+		context.beginPath();
+		context.arc(mouseX, mouseY, rad, 0, 2 * Math.PI, true);
+		context.fillStyle = fillStyle1;
+		context.fill();
+		
+		 requestAnimationFrame(update);
+	}
+	function gtp(){
+		document.button1.onClick=location.href="../5-5.html";
+	}
+	function quest(){
+		alert('По графическому фрагменту найди живописное полотно в залах музея. Внимательно рассмотри фрагмент картины. Закрась графический фрагмент в технике пуантилизм. \n Пуантилизм - стилистическое направление в живописи, в основе которого лежит манера письма радельными мазками правильной, точенчной или прямоугольной формы.');
+	}
+	function hlp(){
+		alert('Чтобы перейти на следующий этап, необходимо заполнить пространство рисунка не менее 50 точками. \n \n Не нашли картину? Эта работа находится в зале №17. Берггольц Р.А. Восход солнца');
+	}
+	update();
+  </script> 
+
+</body> 
+</html>

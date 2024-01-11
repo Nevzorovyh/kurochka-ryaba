@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<style>
+ #user {
+    width: 750px; /* Ширина поля в пикселах */
+   } 
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 25px;
+  text-align: center;
+}
+</style>
+<head>
+
+<title>Task</title>
+
+<script language="JavaScript">
+<!-- hide
+
+function first() {
+var i=0;
+// проверка на прваильность ответа	
+  if (document.forms[0].myText.value=="Граверт Пейзаж с коровами") {i=1;}
+  if (document.forms[0].myText.value=="граверт пейзаж с коровами") {i=1;}
+  if (document.forms[0].myText.value=="граверт Пейзаж с коровами") {i=1;}
+  if (document.forms[0].myText.value=="Граверт пейзаж с коровами") {i=1;}
+  
+  if (document.forms[0].myText.value=="Граверт Пейзаж с коровами ") {i=1;}
+  if (document.forms[0].myText.value=="граверт пейзаж с коровами ") {i=1;}
+  if (document.forms[0].myText.value=="граверт Пейзаж с коровами ") {i=1;}
+  if (document.forms[0].myText.value=="Граверт пейзаж с коровами ") {i=1;}
+  
+if (i==1) {
+ alert("Верно! Молодец!");
+  document.button1.onClick=location.href="T2-1.html";
+  }
+    else {
+			alert("А вот и нет! Посмотри подсказку");
+			document.getElementById("myText1").value=String(Number(document.getElementById("myText1").value)+1);
+			}
+	if(document.getElementById("myText1").value>=4){
+													if(confirm('Сдаешься?')==true){
+													document.button1.onClick=location.href="T2-1.html";
+										}
+													}
+}
+
+function second(){
+// подсказка
+		alert("Введи фамилию автора название картины через пробел.Без инициалов и кавычек. Если не помогло, нужно нажать ОК 3 раза. После сдаться и идти дальше.");
+	
+}
+
+// -->
+</script>
+</head>
+
+<body>
+<table border=5>
+	<tr border=5><th><font size="5"> Найди в залах картину, на которой изображены данные предметы. Укажи автора и название</th>
+	</tr><tr>
+			<th><font size="5">Корова__________дом</th>
+			<th><input type="button" name="button2" value="Help" size="5" style="width: 100px; height: 100px;"  onClick="second()">
+			</th>
+	</tr>
+	<tr>
+			<th>
+				<form name=myForm><input type="text" name="myText" id="user" value=""></form>
+				<form name=myForm><input type="text" name="myText1" id="myText1" value="1"hidden></form>
+			</th>
+			<th>
+				<input type="button" name="button1" value="Ok" onClick="first()"style="width: 100px; height: 100px;">	
+			</th>
+	</tr>
+</table>
+
+
+</body>
+</html>

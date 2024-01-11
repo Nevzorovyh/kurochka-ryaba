@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<style>
+ #user {
+    width: 750px; /* Ширина поля в пикселах */
+   } 
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 25px;
+  text-align: center;
+}
+</style>
+<head>
+
+<title>Task</title>
+
+<script language="JavaScript">
+<!-- hide
+
+function first(){
+// проверка на прваильность ответа	
+	var a = 0;
+	var str='';
+	var str2='Заполни строку ';
+	str = document.getElementById('t1').value;
+	if(str==''){
+		a = a+1;
+		str='';
+		str2=str2+'1. '
+	}
+	
+	str = document.getElementById('t2').value;
+	if(str==''){
+		a = a+1;
+		str='';
+		str2=str2+'2. '
+	}
+	
+	str = document.getElementById('t3').value;
+	if(str==''){
+		a = a+1;
+		str='';
+		str2=str2+'3. '
+	}
+	
+	str = document.getElementById('t4').value;
+	if(str==''){
+		a = a+1;
+		str='';
+		str2=str2+'4. '
+	}
+	
+	str = document.getElementById('t5').value;
+	if(str==''){
+		a = a+1;
+		str='';
+		str2=str2+'5. '
+	}
+	
+	if (a==0){
+		alert("Умница! Продолжай в том же духе!");
+		document.button1.onClick=location.href="../5-3.html";
+	}
+	else alert("Увы! Но нет... Посмотри подсказку!\n"+str2);
+}
+
+function second(){
+// подсказка
+		alert("Пример синквейна к слову Бабочка:\n Бабочка.\n Легкая, красочная.\n Порхает, удивляет, улетает.\n Появляется из обычной гусеницы.\n Насекомое.\n\n Необходимо заполнить все строки");
+	
+}
+
+// -->
+</script>
+</head>
+
+<body>
+<table border=5>
+	<tr>
+			<th colspan="2"><font size="5">Составь пятистишие (синквейн) по произведению Петровичева П.И. Ипатьевский монастырь в Костроме (зал № 18). </th>
+			
+	</tr>
+	<tr>
+			<th>
+			<p align="left"><font size="5">1. Существительное</p>
+			
+			<p align="left"><font size="5">2. 2 прилагательных</p> 
+			
+			<p align="left"><font size="5">3. 3 глагола</p> 
+			
+			<p align="left"><font size="5">4. Фраза по теме</p> 
+			
+			<p align="left"><font size="5">5. Ассоциация с первым заданным словом</p> 
+			
+			</th>
+			<th>
+				<input type="button" name="button2" value="Help" size="5" style="width: 100px; height: 100px;"  onClick="second()">	
+			</th>
+	</tr>
+	<tr>
+			<th>
+			<p align="left"><font size="5"><input type="text" size="95"name="text1"id="t1"></p>
+			
+			<p align="left"><font size="5"><input type="text" size="95"name="text2"id="t2"></p> 
+			
+			<p align="left"><font size="5"><input type="text" size="95"name="text3"id="t3"></p> 
+			
+			<p align="left"><font size="5"><input type="text" size="95"name="text4"id="t4"></p> 
+			
+			<p align="left"><font size="5"><input type="text" size="95"name="text5"id="t5"></p> 
+			
+			</th>
+			<th>
+				<input type="button" name="button1" value="Ok" onClick="first()"style="width: 100px; height: 100px;">
+			</th>
+	</tr>
+</table>
+
+
+</body>
+</html>
