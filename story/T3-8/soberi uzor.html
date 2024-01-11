@@ -1,0 +1,608 @@
+﻿<html>
+	<head>
+		<title>Задание</title>
+		<style>
+			@font-face {
+				font-family:GlyphiconsHalflings;
+				src: url(isource/fonts/glyphicons-halflings-regular.eot);
+				src: local('oth'), url(isource/fonts/glyphicons-halflings-regular.woff);
+				src: local('all'), url(isource/fonts/glyphicons-halflings-regular.ttf);
+				src:	local('for ios'), url(isource/fonts/glyphicons-halflings-regular.svg);
+			}
+			.top {
+			  position: absolute;
+			  border: 1px solid black;
+			  z-index: 1;
+			 }
+			</style>
+		<script type="text/javascript" >
+				function cl(){
+					var i=0;
+					if (document.forms[0].txt2.value=='Венецианов Гадание на картах'){i=1;}
+					if (document.forms[0].txt2.value=='венецианов гадание на картах'){i=1;}
+					if (document.forms[0].txt2.value=='Венецианов гадание на картах'){i=1;}
+					if (document.forms[0].txt2.value=='венецианов Гадание на картах'){i=1;}
+
+
+					if (document.forms[0].txt2.value=='Венецианов Гадание на картах '){i=1;}
+					if (document.forms[0].txt2.value=='венецианов гадание на картах '){i=1;}
+					if (document.forms[0].txt2.value=='Венецианов гадание на картах '){i=1;}
+					if (document.forms[0].txt2.value=='венецианов Гадание на картах '){i=1;}
+
+					if(i==1){
+					alert('Это верный ответ. Здорово!');
+					 document.btn2.onClick=location.href="T2-1.html";
+					} else {
+							alert('О, нет! Ошибка! Посмотри подсказку!');
+							document.getElementById("myText1").value=String(Number(document.getElementById("myText1").value)+1);
+							}
+					if(document.getElementById("myText1").value>=4){
+																	if(confirm('Сдаешься?')==true){			document.btn2.onClick=location.href="T2-1.html";
+																									}
+																	}
+				}
+		</script>
+
+
+	</head>
+
+	<body >
+		<form name="sForm">
+			<table border="1" width="20%" bgcolor="#f0f0f0">
+
+			<input type="button"name="btn1"value="        Задание        " style="font-size:30pt" onClick="alert('По заданным координатам открой фрагменты картины. Найди ее в залах. Укажи автора и название картины через пробел.\n Координаты: D6,D7,E6,E7,G3,G4,H3,H4,I2,I3,J2,J3')">
+
+			<input type="button"name="btn1"value="           Help          " style="font-size:30pt" onClick="alert('Смотри внимательнее на координаты. Если не помогло, нужно нажать ОК 3 раза. После сдаться и идти дальше.')">
+
+			<input type="button"name="btn2"value="              OK             " style="font-size:30pt" onClick="cl()"><br><br>
+
+			<input type="text"name="txt2"id="1"style="font-size:30pt" size=48><br><br>
+			<input type="text"name="txt3"id="myText1"style="font-size:30pt" size=48 hidden>
+
+			<tr>
+					<td>
+						<a href="#">
+						<img src="isource\M (1).jpg" name="img01" width=100 height=100 >
+					</td>
+
+					<td>
+						<a href="#">
+						<img src="isource\M (2).jpg" name="img02" width=100 height=100>
+					</td>
+
+					<td>
+						<a href="#">
+						<img src="isource\M (3).jpg" name="img03" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (4).jpg" name="img04" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (5).jpg" name="img05" width=100 height=100 >
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (6).jpg" name="img06" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (7).jpg" name="img07" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (8).jpg" name="img08" width=100 height=100>
+					</td>
+					<td><a href="#">
+						<img src="isource\M (9).jpg" name="img09" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (10).jpg" name="img10" width=100 height=100>
+					</td>
+				</tr>
+
+			<tr>
+					<td><a href="#">
+						<img src="isource\M (11).jpg" name="img11" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (12).jpg" name="img12" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (13).jpg" name="img13" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (14).jpg" name="img14" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (15).jpg" name="img15" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (16).jpg" name="img16" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (17).jpg" name="img17" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (18).jpg" name="img18" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (19).jpg" name="img19" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (20).jpg" name="img20" width=100 height=100>
+					</td>
+				</tr>
+
+				<tr>
+
+
+					<td><a href="#">
+						<img src="isource\M (21).jpg" name="img21" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (22).jpg" name="img22" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (23).jpg" name="img23" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (24).jpg" name="img24" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (25).jpg" name="img25" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (26).jpg" name="img26" width=100 height=100>
+					</td>
+					<td><a href="#">
+						<img src="isource\M (27).jpg" name="img27" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (28).jpg" name="img28" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (29).jpg" name="img29" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (30).jpg" name="img30" width=100 height=100>
+					</td>
+				</tr>
+
+				<tr>
+					<td><a href="#">
+						<img src="isource\M (31).jpg" name="img31" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (32).jpg" name="img32" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (33).jpg" name="img33" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (34).jpg" name="img34" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (35).jpg" name="img35" width=100 height=100>
+					</td>
+
+					<td><a href="#" onClick="img36.src='isource/P (69).jpg'">
+						<img src="isource\M (36).jpg" name="img36" width=100 height=100>
+					</td>
+
+					<td><a href="#" onClick="img37.src='isource/P (82).jpg'">
+						<img src="isource\M (37).jpg" name="img37" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (38).jpg" name="img38" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (39).jpg" name="img39" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (40).jpg" name="img40" width=100 height=100>
+					</td>
+				</tr>
+
+				<tr>
+					<td><a href="#">
+						<img src="isource\M (41).jpg" name="img41" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (42).jpg" name="img42" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (43).jpg" name="img43" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (44).jpg" name="img44" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (45).jpg" name="img45" width=100 height=100>
+					</td>
+
+					<td><a href="#" onClick="img46.src='isource/P (70).jpg'">
+						<img src="isource\M (46).jpg" name="img46" width=100 height=100>
+					</td>
+
+					<td><a href="#" onClick="img47.src='isource/P (83).jpg'">
+						<img src="isource\M (47).jpg" name="img47" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (48).jpg" name="img48" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (49).jpg" name="img49" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						<img src="isource\M (50).jpg" name="img50" width=100 height=100>
+					</td>
+				<tr/>
+				<tr>
+					<td><a href="#">
+						   <img src="isource\M (51).jpg" name="img51" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (52).jpg" name="img52" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (53).jpg" name="img53" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (54).jpg" name="img54" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (55).jpg" name="img55" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (56).jpg" name="img56" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (57).jpg" name="img57" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (58).jpg" name="img58" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (59).jpg" name="img59" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (60).jpg" name="img60" width=100 height=100>
+					</td>
+				<tr/>
+				<tr>
+					<td><a href="#">
+						   <img src="isource\M (61).jpg" name="img61" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (62).jpg" name="img62" width=100 height=100>
+					</td>
+
+					<td><a href="#" onClick="img63.src='isource/P (33).jpg'">
+						   <img src="isource\M (63).jpg" name="img63" width=100 height=100>
+					</td>
+
+					<td><a href="#" onClick="img64.src='isource/P (46).jpg'">
+						   <img src="isource\M (64).jpg" name="img64" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (65).jpg" name="img65" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (66).jpg" name="img66" width=100 height=100>
+					</td>
+
+					<td><a href="#" >
+						   <img src="isource\M (67).jpg" name="img67" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (68).jpg" name="img68" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (69).jpg" name="img69" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (70).jpg" name="img70" width=100 height=100>
+					</td>
+				<tr/>
+				<tr>
+					<td><a href="#">
+						   <img src="isource\M (71).jpg" name="img71" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (72).jpg" name="img72" width=100 height=100>
+					</td>
+
+					<td><a href="#" onClick="img73.src='isource/P (34).jpg'">
+						   <img src="isource\M (73).jpg" name="img73" width=100 height=100>
+					</td>
+
+					<td><a href="#" onClick="img74.src='isource/P (47).jpg'">
+						   <img src="isource\M (74).jpg" name="img74" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (75).jpg" name="img75" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (76).jpg" name="img76" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (77).jpg" name="img77" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (78).jpg" name="img78" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (79).jpg" name="img79" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (80).jpg" name="img80" width=100 height=100>
+					</td>
+				<tr/>
+				<tr>
+					<td><a href="#">
+						   <img src="isource\M (81).jpg" name="img81" width=100 height=100>
+					</td>
+
+					<td><a href="#"onClick="img82.src='isource/P (22).jpg'">
+						   <img src="isource\M (82).jpg" name="img82" width=100 height=100>
+					</td>
+
+					<td><a href="#"onClick="img83.src='isource/P (35).jpg'">
+						   <img src="isource\M (83).jpg" name="img83" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (84).jpg" name="img84" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (85).jpg" name="img85" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (86).jpg" name="img86" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (87).jpg" name="img87" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (88).jpg" name="img88" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (89).jpg" name="img89" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (90).jpg" name="img90" width=100 height=100>
+					</td>
+				<tr/>
+				<tr>
+					<td><a href="#">
+						   <img src="isource\M (91).jpg" name="img91" width=100 height=100>
+					</td>
+
+					<td><a href="#"onClick="img92.src='isource/P (23).jpg'">
+						   <img src="isource\M (92).jpg" name="img92" width=100 height=100>
+					</td>
+
+					<td><a href="#"onClick="img93.src='isource/P (36).jpg'">
+						   <img src="isource\M (93).jpg" name="img93" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (94).jpg" name="img94" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (95).jpg" name="img95" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (96).jpg" name="img96" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (97).jpg" name="img97" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (98).jpg" name="img98" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (99).jpg" name="img99" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (100).jpg" name="img100" width=100 height=100>
+					</td>
+				<tr/>
+				<tr>
+					<td><a href="#">
+						   <img src="isource\M (101).jpg" name="img101" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (102).jpg" name="img102" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (103).jpg" name="img103" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (104).jpg" name="img104" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (105).jpg" name="img105" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (106).jpg" name="img106" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (107).jpg" name="img107" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (108).jpg" name="img108" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (109).jpg" name="img109" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (110).jpg" name="img110" width=100 height=100>
+					</td>
+				<tr/>
+				<tr>
+					<td><a href="#">
+						   <img src="isource\M (111).jpg" name="img111" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (112).jpg" name="img112" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (113).jpg" name="img113" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (114).jpg" name="img114" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (115).jpg" name="img115" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (116).jpg" name="img116" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (117).jpg" name="img117" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (118).jpg" name="img118" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (119).jpg" name="img119" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (120).jpg" name="img120" width=100 height=100>
+					</td>
+				<tr/>
+				<tr>
+					<td><a href="#">
+						   <img src="isource\M (121).jpg" name="img121" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (122).jpg" name="img122" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (123).jpg" name="img123" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (124).jpg" name="img124" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (125).jpg" name="img125" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (126).jpg" name="img126" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (127).jpg" name="img127" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (128).jpg" name="img128" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (129).jpg" name="img129" width=100 height=100>
+					</td>
+
+					<td><a href="#">
+						   <img src="isource\M (130).jpg" name="img130" width=100 height=100>
+					</td>
+				<tr/>
+					</tr>
+				</tr>
+			</table>
+		  </form>
+		</font>
+	</body>
+</html>

@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 25px;
+  text-align: center;
+}
+</style>
+<head>
+
+<title>Task</title>
+
+<script language="JavaScript">
+<!-- hide
+
+function first() {
+// проверка на прваильность ответа
+var i=0,n=document.getElementById("myText1").value;
+
+	if (document.getElementById("myText").value=="Брюллов Диана, Эндимион и Сатир") {i=1;}
+
+	if (document.getElementById("myText").value=="брюллов диана, эндимион и сатир") {i=1;}
+
+	if (document.getElementById("myText").value=="Брюллов диана, эндимион и сатир") {i=1;}
+
+	if (document.getElementById("myText").value=="брюллов Диана, эндимион и сатир") {i=1;}
+
+	if (document.getElementById("myText").value=="брюллов диана, Эндимион и сатир") {i=1;}
+
+	if (document.getElementById("myText").value=="брюллов Диана, Эндимион и сатир") {i=1;}
+
+	if (document.getElementById("myText").value=="Брюллов диана, Эндимион и сатир") {i=1;}
+
+	if (document.getElementById("myText").value=="Брюллов Диана, эндимион и сатир") {i=1;}
+
+
+	if (document.getElementById("myText").value=="Брюллов Диана, Эндимион и Сатир ") {i=1;}
+
+	if (document.getElementById("myText").value=="брюллов диана, эндимион и сатир ") {i=1;}
+
+	if (document.getElementById("myText").value=="Брюллов диана, эндимион и сатир ") {i=1;}
+
+	if (document.getElementById("myText").value=="брюллов Диана, эндимион и сатир ") {i=1;}
+
+	if (document.getElementById("myText").value=="брюллов диана, Эндимион и сатир ") {i=1;}
+
+	if (document.getElementById("myText").value=="брюллов Диана, Эндимион и сатир ") {i=1;}
+
+	if (document.getElementById("myText").value=="Брюллов диана, Эндимион и сатир ") {i=1;}
+
+	if (document.getElementById("myText").value=="Брюллов Диана, эндимион и сатир ") {i=1;}
+
+if (i==1){
+		alert("Да ты гений!");
+		document.button1.onClick=location.href="T2-1.html";
+		}
+		else{
+			alert("Ну, как так можно? Нет! Посмотри подсказку");
+			document.getElementById("myText1").value=String(Number(n)+1);
+			}
+if(n>=3){
+		if(confirm('Сдаешься?')==true){
+										document.button1.onClick=location.href="T2-1.html";
+										}
+		}
+
+}
+
+function second(){
+// подсказка
+		alert("Введи фамилию автора и название картины через пробел. Без инициалов и кавычек. Если не помогло, нужно нажать ОК 3 раза. После сдаться и идти дальше.");
+}
+
+// -->
+</script>
+</head>
+
+<body>
+<table border=5>
+	<tr border=5><th><font size="5"> Найди работу по фрагменту стихотворения Афанасия Фета. Укажи автора и название.</th>
+	</tr>
+	<tr>
+			<th><font size="5"><br>
+								У звучного ключа как сладок первый сон!<br>
+								Как спящий при луне хорош Эндимион!<br>
+								Герои так покоятся и дети.<br>
+								Над чудной головой висят рожок и сети;<br>
+								Откинутый колчан лежит на стороне;<br>
+								Собаки верные встревожены - оне<br>
+								Не видят смертного и чуют приближенье.<br>
+								Ты ль, непорочная, познала вожделенье?<br>
+								Счастливец! Ты его узрела с высоты,<br>
+								И небо для него должна покинуть ты.<br>
+								Девическую грудь невольный жар объемлет.<br>
+								Диана, берегись! Старик сатир не дремлет.<br>
+								Я слышу стук копыт. Рога прикрыв венцом,<br>
+								Вот он, любовник нимф, с пылающим лицом,<br>
+								Обезображенным порывом страсти зверской,<br>
+								Уж стана нежного рукой коснулся дерзкой.<br>
+								О, как вздрогнула ты, как обернулась вдруг!<br>
+								В лице божественном и гордость и испуг.<br>
+								А баловень Эрот, доволен шуткой новой, <br>
+								Готов на кулаке прохлопнуть лист кленовый.</th>
+			<th><input type="button" name="button2" value="Help" onClick="second()"style="width: 100px; height: 100px;">
+			</th>
+	</tr>
+	<tr>
+			<th>
+				<input type="text" name="myText" value=""style="width: 750px;"id="myText">
+				<input type="text" name="myText1" value=""style="width: 750px;"id="myText1" value="1"hidden>
+			</th>
+			<th>
+				<input type="button" name="button1" value="Ok" onClick="first()"style="width: 100px; height: 100px;">
+			</th>
+	</tr>
+</table>
+
+
+</body>
+</html>

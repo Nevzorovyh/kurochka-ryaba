@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 25px;
+  text-align: center;
+}
+</style>
+<head>
+
+<title>0</title>
+
+<script language="JavaScript">
+<!-- hide
+
+function first() {
+// проверка на прваильность ответа
+var i=0;
+if (document.forms[0].myText.value=="Бутылка") {i=1;}
+if (document.forms[0].myText.value=="бутылка") {i=1;}
+
+if(i==1){
+  alert("О, да! Ты супер!");
+  document.button1.onClick=location.href="T2-1.html";
+  }
+    else {alert("Очень жаль, но это неправильный ответ! Смотри подсказку.");
+	document.getElementById("myText1").value=String(Number(document.getElementById("myText1").value)+1);
+	}
+
+	if(document.getElementById("myText1").value>=4){
+				if (confirm("Сдаешься?")) {
+								document.button1.onClick=location.href="T2-1.html";
+								}
+}
+}
+
+function second(){
+// подсказка
+		alert("Вид предмета дан сверху. Если не помогло, нужно нажать ОК 3 раза. После сдаться и идти дальше.");
+
+}
+
+// -->
+</script>
+</head>
+
+<body>
+<table border=5>
+	<tr border=5><th><font size="5"> По данному контуру определи, какой предмет зашифрован</th><th></th>
+	</tr><tr>
+			<th><img src="1-1.jpg" width="550" height="700" alt="Пример"></a></th>
+			<th><input type="button" name="button2" value="Help" onClick="second()"style="width: 100px; height: 100px;">
+			</th>
+	</tr>
+	<tr>
+			<th>
+				<form name=myForm><input type="text" name="myText" value=""style="width: 750px;"></form>
+				<input type="text" name="myText1" id="myText1" value="1"hidden>
+			</th>
+			<th>
+				<input type="button" name="button1" value="Ok" onClick="first()"style="width: 100px; height: 100px;">
+			</th>
+	</tr>
+</table>
+
+
+</body>
+</html>

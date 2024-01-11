@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<style>
+ #user {
+    width: 750px; /* Ширина поля в пикселах */
+   }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 25px;
+  text-align: center;
+}
+</style>
+<head>
+
+<title>Task</title>
+
+<script language="JavaScript">
+<!-- hide
+
+function first() {
+// проверка на прваильность ответа
+var i=0;
+	if (document.forms[0].myText.value=="Портрет"){i=1;}
+	if (document.forms[0].myText.value=="портрет"){i=1;}
+
+	if (document.forms[0].myText.value=="Портрет "){i=1;}
+	if (document.forms[0].myText.value=="портрет "){i=1;}
+
+	if(i==1){
+		 alert("Это верный ответ. Здорово!");
+		document.button1.onClick=location.href="T2-1.html";
+	}
+	else alert('О, нет! Ошибка! Посмотри подсказку!')
+}
+
+function second(){
+// подсказка
+		alert("Ребус - загадка, в которой искомое слово или фраза изображены комбинацией фигур, букв или знаков. (Толковый словарь С. И. Ожегова). Картинка в ребусе (изображение чего-то или кого-то), как правило, означает слово-существительное в именительном падеже. Запятые перед картинкой указывают, что в начале слова, которое обозначено данной картинкой, нужно убрать столько букв, сколько запятых изображено. Запятые после картинки указывают, что в конце слова, которое обозначено данной картинкой, нужно убрать столько букв, сколько запятых изображено.");
+
+}
+
+// -->
+</script>
+</head>
+
+<body>
+<table border=5>
+	<tr border=5><th><font size="5"> Укажи жанр живописи, разгадав ребус</th>
+	</tr><tr>
+			<th><font size="5"><img src="1-1.jpg" width="700" height="500" alt="Пример"></th>
+			<th><input type="button" name="button2" value="Help" size="5" style="width: 100px; height: 100px;"  onClick="second()">
+			</th>
+	</tr>
+	<tr>
+			<th>
+				<form name=myForm><input type="text" name="myText" id="user" value=""></form>
+			</th>
+			<th>
+				<input type="button" name="button1" value="Ok" onClick="first()"style="width: 100px; height: 100px;">
+			</th>
+	</tr>
+</table>
+
+
+</body>
+</html>

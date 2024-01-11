@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 25px;
+  text-align: center;
+}
+</style>
+<head>
+
+<title>Task</title>
+
+<script language="JavaScript">
+<!-- hide
+
+function first() {
+// проверка на прваильность ответа
+var i=0,n=document.getElementById("myText1").value;
+
+	if (document.getElementById("myText").value=="Кот и Повар") {i=1;}
+
+	if (document.getElementById("myText").value=="кот и повар") {i=1;}
+
+	if (document.getElementById("myText").value=="Кот и повар") {i=1;}
+
+	if (document.getElementById("myText").value=="кот и Повар") {i=1;}
+
+
+	if (document.getElementById("myText").value=="Кот и Повар ") {i=1;}
+
+	if (document.getElementById("myText").value=="кот и повар ") {i=1;}
+
+	if (document.getElementById("myText").value=="Кот и повар ") {i=1;}
+
+	if (document.getElementById("myText").value=="кот и Повар ") {i=1;}
+
+if (i==1){
+		alert("Да ты гений!");
+		document.button1.onClick=location.href="T2-1.html";
+		}
+		else{
+			alert("Ну, как так можно? Нет! Посмотри подсказку");
+			document.getElementById("myText1").value=String(Number(n)+1);
+			}
+if(n>=3){
+		if(confirm('Сдаешься?')==true){
+										document.button1.onClick=location.href="T2-1.html";
+										}
+		}
+
+}
+
+function second(){
+// подсказка
+		alert("Введи фамилию автора и название картины через пробел. Без инициалов и кавычек. Если не помогло, нужно нажать ОК 3 раза. После сдаться и идти дальше.");
+}
+
+// -->
+</script>
+</head>
+
+<body>
+<table border=5>
+	<tr border=5><th><font size="5"> Найди работу по фрагменту стихотворения. Укажи автора и название.</th>
+	</tr>
+	<tr>
+			<th>"Ах ты оюжора! Ах злодей!" - <br>
+				Тут повар Ваську укоряет, - <br>
+				"Не стыдно ль стен тебе, не только что людей<br>
+				(Васька все-таки курчонка убирает.)<br>
+				Как! Быв честным Котом до тех пор,<br>
+				Бывало, за пример тебя смиренства <br>кажут, - <br>
+				А ты... ахти, какой позор!<br>
+				Теперя все соседи скажут:<br>
+				"Кот Васька плут! Кот Васька вор!<br>
+				И Ваську-де, не только что в поварню,<br>
+				Пускать не надо и на двор, <br>
+				Как волка жадного в овчарню:<br>
+				Он порча, он чума, он язва здешних <br>мест!"
+			</th>
+			<th><input type="button" name="button2" value="Help" onClick="second()"style="width: 100px; height: 100px;">
+			</th>
+	</tr>
+	<tr>
+			<th>
+				<input type="text" name="myText" value=""style="width: 750px;"id="myText">
+				<input type="text" name="myText1" value=""style="width: 750px;"id="myText1" value="1"hidden>
+			</th>
+			<th>
+				<input type="button" name="button1" value="Ok" onClick="first()"style="width: 100px; height: 100px;">
+			</th>
+	</tr>
+</table>
+
+
+</body>
+</html>

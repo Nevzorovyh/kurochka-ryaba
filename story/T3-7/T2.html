@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<style>
+ #user {
+    width: 750px; /* Ширина поля в пикселах */
+   }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 25px;
+  text-align: center;
+}
+</style>
+<head>
+
+<title>Task</title>
+
+<script language="JavaScript">
+<!-- hide
+
+function first() {
+// проверка на прваильность ответа
+var i=0;
+  if (document.forms[0].myText.value=="Тропинин Старуха, стригущая ногти") {i=1;}
+  if (document.forms[0].myText.value=="тропинин старуха, стригущая ногти") {i=1;}
+  if (document.forms[0].myText.value=="Тропинин старуха, стригущая ногти") {i=1;}
+  if (document.forms[0].myText.value=="тропинин Старуха, стригущая ногти") {i=1;}
+
+  if (document.forms[0].myText.value=="Тропинин Старуха, стригущая ногти ") {i=1;}
+  if (document.forms[0].myText.value=="тропинин старуха, стригущая ногти ") {i=1;}
+  if (document.forms[0].myText.value=="Тропинин старуха, стригущая ногти ") {i=1;}
+  if (document.forms[0].myText.value=="тропинин Старуха, стригущая ногти ") {i=1;}
+
+  if(i==1){
+  alert("Да! Так держать!");
+  document.button1.onClick=location.href="T2-2.html";
+  }
+	else {
+			alert('Ошибка! Посмотри подсказку!');
+			document.getElementById("user").value=String(Number(document.getElementById("user").value)+1);
+			}
+  if(document.getElementById("user").value>=4){
+													if(confirm('Сдаешься?')==true){
+													document.button1.onClick=location.href="T2-2.html";
+										}
+													}
+}
+
+function second(){
+// подсказка
+alert('Если подсказка не помогла, нужно нажать ОК 3 раза. После сдаться и идти дальше.');
+		document.button1.onClick=location.href="T2-1.html";
+
+}
+
+// -->
+</script>
+</head>
+
+<body>
+<table border=5>
+	<tr border=5><th><font size="5"> Найди предметы, спрятанные на картинке. В залах найди картину, на которой они изображены. Укажи автора и название картины.</th>
+	</tr><tr>
+			<th><img src="1-1.jpg" width="700" height="500" alt="Пример"></th>
+			<th><input type="button" name="button2" value="Help" size="5" style="width: 100px; height: 100px;"  onClick="second()">
+			</th>
+	</tr>
+	<tr>
+			<th>
+				<form name=myForm><input type="text" name="myText" id="user1"style="width:750px;"></form>
+				<input type="text" name="myText1" id="user" value="1" hidden>
+			</th>
+			<th>
+				<input type="button" name="button1" value="Ok" onClick="first()"style="width: 100px; height: 100px;">
+			</th>
+	</tr>
+</table>
+
+
+</body>
+</html>

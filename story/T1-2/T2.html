@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<style>
+ #user {
+    width: 750px; /* Ширина поля в пикселах */
+   }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 25px;
+  text-align: center;
+}
+</style>
+<head>
+
+<title>Task</title>
+
+<script language="JavaScript">
+<!-- hide
+
+function first() {
+var i=0;
+// проверка на прваильность ответа
+  if (document.getElementById("myText").value=="Кончаловский Овощи и вальдшнепы") {i=1;}
+  if (document.getElementById("myText").value=="кончаловский овощи и вальдшнепы") {i=1;}
+  if (document.getElementById("myText").value=="Кончаловский овощи и вальдшнепы") {i=1;}
+  if (document.getElementById("myText").value=="кончаловский Овощи и вальдшнепы") {i=1;}
+
+  if (document.getElementById("myText").value=="Кончаловский Овощи и вальдшнепы ") {i=1;}
+  if (document.getElementById("myText").value=="кончаловский овощи и вальдшнепы ") {i=1;}
+  if (document.getElementById("myText").value=="Кончаловский овощи и вальдшнепы ") {i=1;}
+  if (document.getElementById("myText").value=="кончаловский Овощи и вальдшнепы ") {i=1;}
+
+  if(i==1){
+			  alert("Это правильный ответ!");
+			  document.button1.onClick=location.href="T2-1.html";
+		  }
+			else{
+				alert("Увы, это ошибка! Посмотри подсказку");
+				document.getElementById("myText1").value=String(Number(document.getElementById("myText1").value)+1);
+				}
+   if(document.getElementById("myText1").value>=4){
+													if(confirm('Сдаешься?')==true){
+																					window.location.href = 'T2-1.html';
+																					}
+													}
+}
+
+function second(){
+// подсказка
+		alert("Введи фамилию автора и название картины через пробел. Без знаков препинания и кавычек. Если не помогло, нужно нажать ОК 3 раза. После сдаться и идти дальше.");
+
+}
+
+// -->
+</script>
+</head>
+
+<body>
+<table border=5>
+	<tr border=5><th><font size="5"> Найдите картину по заданному слову. Укажите Автора и название</th>
+	</tr><tr>
+			<th><font size="5">Вальдшнепы</th>
+			<th><input type="button" name="button2" value="Help" size="5" style="width: 100px; height: 100px;"  onClick="second()">
+			</th>
+	</tr>
+	<tr>
+			<th>
+				<input type="text" name="myText"  id="myText"style="font-size:20px; height:20px; width:750px;">
+				<input type="text" name="myText1"  id="myText1"style="font-size:20px; height:20px; width:750px;"value="1"hidden>
+			</th>
+			<th>
+				<input type="button" name="button1" value="Ok" onClick="first()"style="width: 100px; height: 100px;">
+			</th>
+	</tr>
+</table>
+
+
+</body>
+</html>
